@@ -15,3 +15,9 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+
+# Add a passwall depend	
+git clone https://github.com/kenzok8/small.git package/small
+
+# Add a passwall	
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall
